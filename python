@@ -1,5 +1,14 @@
+# Getting the base image
 FROM python: 3.4-alphine
+
+# Copying the code to this desired directory
 ADD . /code
+
+# Making this as the working directory
 WORKDIR /code
+
+# Installing the requirements
 RUN pip install -r requirements.txt
-CMD ["python", "webapppy"]
+
+# Running the web-application
+CMD ["python", "webapp.py"]
