@@ -1,5 +1,5 @@
 # Getting the base image
-FROM python: 3.4-alphine
+FROM python: 3.11-alphine
 
 # Copying the code to this desired directory
 ADD . /code
